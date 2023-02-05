@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width,
+                  initial-scale=1.0">
+            <title>Form Two</title>
+      </head>
+      <body>
+            <form>
+                  <div>
+                        <label for="username">Username: </label>
+                        <input type="text" name="username" id="username"
+                              placeholder="Enter your username" required>
+
+                  </div><br>
+                  <div>
+                        <label for="email">Email: </label>
+                        <input type="email" name="email" id="email"
+                              placeholder="Enter your email" required>
+
+                  </div><br>
+                  <div>
+                        <label for="gender"> Choose your gender: </label>
+                        <input type="radio" name="gender"> Male <input
+                              type="radio" name="gender"> Female <input
+                              type="radio" name="gender"> Other
+
+                  </div> <br>
+                  <div> <label for="country"> Choose your country: </label>
+                        <select name="country" id="country" required>
+                              <option value="India">India</option>
+                              <option value="Sri Lanka">Sri Lanka</option>
+                              <option value="Russia">Russia</option>
+                              <option value="Germany" selected>Germany</option>
+                              <option value="Other">Others</option>
+                        </select>
+                  </div> <br>
+                  <div>
+                        <label for="language"> Choose your language: </label>
+                        <input type="checkbox" name="language" id="language"
+                              checked>
+                        English <input type="checkbox" name="language"
+                              id="language"> Hindi
+                  </div>
+                  <br>
+                  <div><label for="color">Choose your favourite color: </label>
+                        <input type="color" name="color" id="color"
+                              value="#fff000"></div> <br>
+                  <div><label for="range">Enter the range of age group: </label>
+                        <input type="range" value="25" name="agegroup"
+                              id="agegroup" min="10" max="100" step="5"
+                              oninput="this.nextElementSibling.value=
+                              this.value"> <output>25</output>
+                  </div> <br>
+
+                  <div>
+                        <label for="submission_date">Enter your submission date:
+                        </label>
+                        <input type="datetime-local" name="date_time_local"
+                              id="date_time_local">
+                  </div> <br>
+                  <div>
+                        <label for="userid">Create User Id: </label>
+                        <input type="text" name="userid" id="userid"
+                              minlength="4" maxlength="10" size="15">
+                  </div> <br>
+                  <div>
+                        <label for="resume">Upload your resume: </label>
+                        <input type="file" name="resume" id="resume">
+                  </div> <br>
+                  <div>
+                        <label for="image"> Upload your image: </label>
+                        <input type="file" name="image_dp" id="image_dp"
+                              accept="image/png, image/jpeg">
+                  </div>
+                  <br>
+                  <div>
+                        <input type="submit" value="Submit Details">
+                  </div>
+            </form>
+
+      </body>
+</html>
